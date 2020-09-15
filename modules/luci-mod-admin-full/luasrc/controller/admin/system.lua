@@ -20,6 +20,8 @@ function index()
 
 	entry({"admin", "system", "startup"}, form("admin_system/startup"), _("Startup"), 45)
 	entry({"admin", "system", "crontab"}, form("admin_system/crontab"), _("Scheduled Tasks"), 46)
+	entry({"admin", "system", "socat"}, form("admin_system/socat"), _("Socat Tasks"), 47)
+	entry({"admin", "system", "zabbix"}, form("admin_system/zabbix"), _("Zabbix Tasks"), 48)
 
 	if fs.access("/sbin/block") then
 		entry({"admin", "system", "fstab"}, cbi("admin_system/fstab"), _("Mount Points"), 50)
