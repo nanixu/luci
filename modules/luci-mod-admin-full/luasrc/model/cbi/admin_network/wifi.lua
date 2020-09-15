@@ -740,6 +740,10 @@ elseif hwtype == "broadcom" then
 	encr:value("psk", "WPA-PSK")
 	encr:value("psk2", "WPA2-PSK")
 	encr:value("psk+psk2", "WPA-PSK/WPA2-PSK Mixed Mode")
+elseif hwtype == "ralink" then
+	encr:value("psk", "WPA-PSK")
+	encr:value("psk2", "WPA2-PSK")
+	encr:value("psk+psk2", "WPA-PSK/WPA2-PSK Mixed Mode")
 end
 
 auth_server = s:taboption("encryption", Value, "auth_server", translate("Radius-Authentication-Server"))
